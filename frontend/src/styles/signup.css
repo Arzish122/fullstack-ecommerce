@@ -1,0 +1,149 @@
+/* General Body and Font Styles (consistent with login.css) */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fd; /* Light background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    color: #1c1c1c;
+}
+
+/* Signup Container (consistent with login.css) */
+.signup-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px; /* Max width for the form */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.signup-container h2 {
+    font-size: 28px;
+    color: #0d6efd; /* Primary blue for heading */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Form Group for Inputs (consistent with login.css) */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    color: #505050;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1c1c1c;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0d6efd; /* Highlight on focus */
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2); /* Soft glow on focus */
+}
+
+/* Signup Button (consistent with login.css) */
+.signup-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.signup-button:hover {
+    background-color: #0b5ed7; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.signup-button:active {
+    transform: translateY(0);
+}
+
+/* Link to Login Page (consistent with login.css) */
+.login-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #505050;
+}
+
+.login-link a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+/* Message Styles */
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive Adjustments (consistent with login.css) */
+@media (max-width: 500px) {
+    .signup-container {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .signup-container h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .signup-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
